@@ -1,6 +1,6 @@
 // Bylnk Auth token could be inserted above code.
 // This code is to control my solinoid vavle to my rain barrel.
-// So far I have a proof of concept a rainbarrel that turns on and off with my phone. and is powered my a solar pannel conncected to a 12v battery.
+// So far I have a proof of concept rainbarrel that turns on and off with my phone. and is powered my a solar pannel conncected to a 12v battery.
 class Solenoid{
     public:
 //soul for solenoid as my variable because I have a soul. I give my Life to Jesus who gives me streagth.
