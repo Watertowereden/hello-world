@@ -1,0 +1,45 @@
+// Bylnk Auth token could be inserted above code.
+// This code is to control my solinoid vavle to my rain barrel.
+// So far I have a proof of concept a rainbarrel that turns on and off with my phone. and is powered my a solar pannel conncected to a 12v battery.
+class Solenoid{
+    public:
+//soul for solenoid as my variable because I have a soul. I give my Life to Jesus who gives me streagth.
+    int soul1,soul2;
+    bool toggle = false;
+    Solenoid(){
+        Particle.function("solenoidOn",&Solenoid::solenoidOn, this); 
+        soul1 = D0;
+        soul2 = D7;
+       
+        pinMode(led1, OUTPUT);
+        pinMode(led2, OUTPUT);
+
+    }
+  int solenoidOn(String extra){
+    toggle = !toggle;
+    if(toggle){
+      digitalWrite(soul1, HIGH);
+      digitalWrite(soul2, HIGH);  
+    } else {
+      digitalWrite(soul1, LOW);
+      digitalWrite(soul2, LOW); 
+    }
+    return 1;
+    }
+  int onForFour(){
+          // To blink the LED, first we'll turn it on...
+      digitalWrite(led1, HIGH);
+      digitalWrite(led2, HIGH);
+    
+      // We'll leave it on for 10 second...
+      delay(4000);
+    
+      // Then we'll turn it off...
+      digitalWrite(led1, LOW);
+      digitalWrite(led2, LOW);
+      //Particle.publish("temp", "hi", PRIVATE);
+    
+      return 1;
+      // And repeat!  
+  }
+};
