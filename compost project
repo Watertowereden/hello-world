@@ -1,0 +1,38 @@
+Arduino Composter
+
+Compost is organic material that can be added to soil to help plants grow. 
+Yard waste and food scraps currently make up 20 to 30 percent of what Americans throw away. 
+Making a composter keeps less materials out of landfills and reduces the release of methane, a potent greenhouse gas.
+A few reasons people choose not to compost is that is hard work and needs to be monitored. 
+Having a system that would alleviate some of the hassle of composting may encourage more people to participate in composting. 
+My goal for this project is to use a DC motor connected to a battery charged by a solar cell to rotate a barrel. 
+Rotating the barrel with a motor can be achieved in two ways or a combination of both. 
+First, you could have a stepdown geared motor with a high torque and low RPM using a v-belt to turn the barrel. 
+Second, you could have the barrel on a set of rollers or wheels on a base that are controlled similarly using a motor. 
+In the future, some additional requirements that I would like to implement in the project is a measurement of the moisture in the soil. 
+This device will help by notifying the user if water needs to be added and when to tumble the material in the barrel. 
+To achieve these additional requirements, a moisture sensor and pH sensor could be used to measure the material inside the barrel.
+A 12-volt solenoid valve connected to a small 5-gallon bucket could be applied in the design. 
+I already have built this portion with my previous project and could implement it in to the design, 
+though it would need to be expanded to add the moisture and pH sensor. 
+
+Bill of Materials – Electronic 
+Arduino UNO
+DC Motor – need to find a stepdown geared motor with low torque and high rpm
+12-volt battery
+18v solar cell
+Charge controller
+Humidity sensor
+pH sensor 
+Moisture sensor 
+5-12v voltage reducer. – prevent the board from shorting.  
+Relay 
+Bread board 
+Jumper wires 
+
+
+Bill of Materials – Raw
+1 ½ Steel rods
+Equipment for welding. Plasma cutter/wire feed arch weld/steel cutter
+Drill – to make air vents. 
+Barrel 
